@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./output.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className='w-4/5 m-auto flex justify-center border'>
+    <nav className='h-24 w-full flex row border bg-bars'>
+      <ul className='row flex h-20 text-white text-3xl '>
+        <li className="hover:text-black">Game</li>
+        <li>HighScore</li>
+        <li>About</li>
+      </ul>
+    </nav>
+    <div>
+      <p>testar</p>
     </div>
-  );
+  </div>
+  ) ;
 }
 
 export default App;
