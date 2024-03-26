@@ -1,21 +1,18 @@
 import React from "react";
 import "./output.css";
+import Navbar from "./navbar";
+import Gamebody from "./game";
+import Options from "./game_settings"
 
 function App() {
-  return(
-    <div className='w-4/5 m-auto flex justify-center border'>
-    <nav className='h-24 w-full flex row border bg-bars'>
-      <ul className='row flex h-20 text-white text-3xl '>
-        <li className="hover:text-black">Game</li>
-        <li>HighScore</li>
-        <li>About</li>
-      </ul>
-    </nav>
-    <div>
-      <p>testar</p>
+
+  return (
+    <div className="flex flex-col mt-0 min-w-[80vw] w-[80vw] h-[100vh] mx-auto border">
+      <Navbar />
+      <Options />
+      <Gamebody/>
     </div>
-  </div>
-  ) ;
+  );
 }
 
 export default App;
